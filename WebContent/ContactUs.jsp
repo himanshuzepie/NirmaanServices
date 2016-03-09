@@ -11,9 +11,12 @@
 <meta name="keywords" content="website keywords, website keywords" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
-<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/style.css" />" />
-<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/headerstyle.css" />" />
-<link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/contactform.css" />" />
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/assets/css/contactUs.css" />" />
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/assets/css/headerstyle.css" />" />
+<link rel="stylesheet" type="text/css"
+	href="<c:url value="/assets/css/contactform.css" />" />
 <!-- modernizr enables HTML5 elements and feature detects -->
 
 <script type="text/javascript"
@@ -77,7 +80,8 @@
 
 			<div id="sidebar_container">
 				<div class="sidebar">
-					<form onSubmit="Javascript:sendMessage()" class="tsc_form_contact_light">
+					<form onSubmit="Javascript:sendMessage()"
+						class="tsc_form_contact_light">
 						<label for="name">Name <span>(required)</span></label> <input
 							type="text" name="name" class="form-input" required /> <label
 							for="email">Email <span>(required)</span></label> <input
@@ -91,26 +95,29 @@
 				</div>
 			</div>
 			<div class="content">
-				<h3>Primary Contacts</h3>
-				<table>
-					<tr>
-						<td>Aman Jain</td>
-						<td>+91 97822 18221</td>
-					</tr>
-					<tr>
-						<td>Manish Sarolia</td>
-						<td>+91 94615 51340</td>
-					</tr>
-					<tr>
-						<td>Rohit kumawat</td>
-						<td>+91 94688 47707</td>
-					</tr>
-				</table>
+				<div id="primaryContactsDiv">
+					<h3>Primary Contacts</h3>
+					<table class="contactTable">
+						<tr>
+							<td>Aman</td>
+							<td> +91 9782218221</td>
+						</tr>
+						<tr>
+							<td>Manish</td>
+							<td> +91 9461551340
+						</tr>
+						<tr>
+							<td>Rohit</td>
+							<td> +91 9468847707</td>
+						</tr>
+					</table>
+				</div>
 				<br>
 				<h3>Where We're located</h3>
-				<p>Nirmaan Services,</p>
-				<p>25, Surya Nagar,Gopalpura Byepass,</p>
-				<p>Jaipur, Rajasthan - 302015</p>
+				<p>Nirmaan Services,<br>
+				33, III Floor, Jaipur electronic Market, Near Triveni Nagar,
+					Gopalpura Bypass<br>
+				Jaipur, Rajasthan - 302015</p>
 			</div>
 		</div>
 
@@ -125,8 +132,7 @@
 						maps generator</a></small>
 			</div>
 		</div>
-		<br>
-		<br>
+		<br> <br>
 		<footer>
 		<p>
 			Copyright &copy; Nirmaan Services | <a href="http://www.google.com">Go
@@ -137,10 +143,7 @@
 	<p>&nbsp;</p>
 	<!-- javascript at the bottom for fast page loading -->
 
-
-
-
-	<script type="text/javascript"
+	<%-- <script type="text/javascript"
 		src="<c:url value="/assets/js/lib/jquery.js" />"></script>
 	<script type="text/javascript"
 		src="<c:url value="/assets/js/lib/jquery.easing-sooper.js" />"></script>
@@ -156,6 +159,6 @@
 			});
 			$('ul.sf-menu').sooperfish();
 		});
-	</script>
+	</script> --%>
 </body>
 </html>
