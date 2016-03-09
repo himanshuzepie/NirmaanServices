@@ -214,20 +214,22 @@ nav {
 
 #site_content {
 	width: 930px;
+	height: 791px;
 	overflow: hidden;
 	margin: 0px auto 0 auto;
 	padding: 15px 0 15px 0;
+	
 }
 
 #sidebar_container {
 	float: right;
-	width: 224px;
+	width: 300px;
 	margin: 25px 0 0 0;
 }
 
 .sidebar {
 	float: right;
-	width: 200px;
+	width: 270px; /*actual width comes to be 298px.*/
 	margin: 0 0 17px 0;
 	padding: 0 15px 5px 13px;
 }
@@ -274,7 +276,7 @@ nav {
 
 .content {
 	text-align: left;
-	width: 650px;
+	width: 600px;
 	margin: 0 0 15px 0;
 	float: left;
 	font-size: 120%;
@@ -293,7 +295,7 @@ nav {
 	line-height: 1.5em;
 }
 
-footer {
+#footer {
 	width: 930px;
 	font: 170% 'News Cycle', arial, sans-serif;
 	height: 30px;
@@ -303,18 +305,18 @@ footer {
 	background: rgba(30, 45, 59, 0.80);
 }
 
-footer p {
+#footer p {
 	line-height: 1.7em;
 	padding: 0 0 10px 0;
 	color: #FFF;
 }
 
-footer a {
+#footer a {
 	color: #FFF;
 	text-decoration: none;
 }
 
-footer a:hover {
+#footer a:hover {
 	color: #efbe07;
 	text-shadow: none;
 	text-decoration: none;

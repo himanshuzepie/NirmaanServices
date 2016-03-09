@@ -401,15 +401,15 @@ table {
 }
 
 table tr th, table tr td {
-	background: #ffffff;
-	color: #000000;
+	background: #70D4E6;
+	color: #FFF;
 	padding: 7px 4px;
 	text-align: left;
 }
 
 table tr td {
-	background: #ffffff;
-	color: #000000;
+	background: #D3F2F7;
+	color: #47433F;
 	border-top: 1px solid #FFF;
 }
 

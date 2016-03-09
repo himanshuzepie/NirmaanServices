@@ -100,45 +100,48 @@
 					<table class="contactTable">
 						<tr>
 							<td>Aman</td>
-							<td> +91 9782218221</td>
+							<td>+91 9782218221</td>
 						</tr>
 						<tr>
 							<td>Manish</td>
-							<td> +91 9461551340
+							<td>+91 9461551340
 						</tr>
 						<tr>
 							<td>Rohit</td>
-							<td> +91 9468847707</td>
+							<td>+91 9468847707</td>
 						</tr>
 					</table>
 				</div>
 				<br>
 				<h3>Where We're located</h3>
-				<p>Nirmaan Services,<br>
-				33, III Floor, Jaipur electronic Market, Near Triveni Nagar,
-					Gopalpura Bypass<br>
-				Jaipur, Rajasthan - 302015</p>
+				<p>
+					Nirmaan Services,<br> 33, III Floor, Jaipur electronic Market,
+					Near Triveni Nagar, Gopalpura Bypass<br> Jaipur, Rajasthan -
+					302015
+				</p><br>
+				<h3>Directions</h3>
+				<div style='overflow: hidden; height: 250px; width: 500px;'>
+					<div id='gmap_canvas' style='height: 250px; width: 500px;'></div>
+					<div>
+						<small><a href="http://embedgooglemaps.com"> embed
+								google map </a></small>
+					</div>
+					<div>
+						<small><a href="http://googlemapsgenerator.com/">Google
+								maps generator</a></small>
+					</div>
+				</div>
 			</div>
+
 		</div>
 
-		<div style='overflow: hidden; height: 250px; width: 500px;'>
-			<div id='gmap_canvas' style='height: 250px; width: 500px;'></div>
-			<div>
-				<small><a href="http://embedgooglemaps.com"> embed
-						google map </a></small>
-			</div>
-			<div>
-				<small><a href="http://googlemapsgenerator.com/">Google
-						maps generator</a></small>
-			</div>
-		</div>
 		<br> <br>
-		<footer>
-		<p>
-			Copyright &copy; Nirmaan Services | <a href="http://www.google.com">Go
-				To Google</a>
-		</p>
-		</footer>
+		<div id="footer">
+			<p>
+				Copyright &copy; Nirmaan Services | <a href="http://www.google.com">Go
+					To Google</a>
+			</p>
+		</div>
 	</div>
 	<p>&nbsp;</p>
 	<!-- javascript at the bottom for fast page loading -->

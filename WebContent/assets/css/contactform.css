@@ -1,13 +1,13 @@
 
 .tsc_form_contact_light {
 	margin: 0 0 24px;
-	width: 190px;
+	width: 290px;
 	text-align: left;
 }
 
 .tsc_form_contact_light .form-input {
 	display: block;
-	width: 175px;
+	width: 250px;
 	height: 24px;
 	padding: 6px 10px;
 	margin-bottom: 20px;
@@ -37,7 +37,7 @@
 }
 
 .tsc_form_contact_light textarea.form-input {
-	width: 175px;
+	width: 250px;
 	height: 100px;
 	overflow: auto;
 }
@@ -144,13 +144,16 @@
 	width: 175px;
 	color: #444;
 	font-weight: bold;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	font: 180% 'Yanone Kaffeesatz', arial, sans-serif;
+    text-shadow: rgb(239, 190, 7) 1px 1px;
+	/* text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5); */
 }
 
 .tsc_form_contact_light label span {
 	font-size: 12px;
 	font-weight: normal;
 	color: #999;
+	text-shadow: none;
 }
 
 .tsc_form_contact_light.frame {
