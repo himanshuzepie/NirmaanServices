@@ -11,20 +11,24 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class NirmaanController {
 
-	
 	@RequestMapping("/sendMessage.do")
 	public ModelAndView helloWorld() {
- 
+
 		System.out.println("Message received in backend.");
 		String message = "<br><div style='text-align:center;'>"
 				+ "<h3>********** Hello World, Spring MVC Tutorial</h3>This message is coming from CrunchifyHelloWorld.java **********</div><br><br>";
 		return new ModelAndView("welcome", "message", message);
 	}
-	
-	@RequestMapping(value = "sendMessage", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+
+	@RequestMapping(value = "sendMessage", method = RequestMethod.GET)
 	@ResponseBody
-	public String sendMessage(@RequestParam("name") String name){
-		System.out.println("Send Message:"+ name);
+	public String sendMessage(@RequestParam("name") String name, @RequestParam("email") String email,
+			@RequestParam("subject") String subject, @RequestParam("message") String message) {
+		System.out.println("Send Message:" + name);
+		System.out.println(email);
+		System.out.println(subject);
+		System.out.println(message);
+
 		return "success";
 	}
 }

@@ -2,9 +2,13 @@ $(document).ready(
 		function(){
 			$("#sendMessage").click(function(){
 				var name = $("#name").val();
+				var email = $("#email").val();
+				var subject = $("#subject").val();
+				var message = $("#message").val();
+				
 				$.ajax(
 					{
-						url: "sendMessage?name="+name,
+						url: "sendMessage?name="+name+"&email="+email+"&subject="+subject+"&message="+message,
 						dataType: "text",
 						async:false,
 						error: function(){
