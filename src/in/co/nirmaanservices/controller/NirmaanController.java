@@ -1,11 +1,14 @@
 package in.co.nirmaanservices.controller;
 
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/NirmaanServices")
 public class NirmaanController {
 
 	
@@ -18,4 +21,10 @@ public class NirmaanController {
 		return new ModelAndView("welcome", "message", message);
 	}
 	
+	@RequestMapping(value = "sendMessage", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	@ResponseBody
+	public String sendMessage(@RequestParam("name") String name){
+		System.out.println("Send Message:"+ name);
+		return "success";
+	}
 }

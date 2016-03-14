@@ -19,12 +19,11 @@
 	href="<c:url value="/assets/css/contactform.css" />" />
 <!-- modernizr enables HTML5 elements and feature detects -->
 
-<script type="text/javascript"
-	src="<c:url value="/assets/js/lib/modernizr-1.5.min.js" />"></script>
-<script
-	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<script type="text/javascript"
-	src="<c:url value="/assets/js/nirmaan.js" />"></script>
+<script type="text/javascript" src="<c:url value="/assets/js/lib/jquery-1.12.1.js" />"></script>
+<script type="text/javascript" src="<c:url value="/assets/js/lib/modernizr-1.5.min.js" />"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="<c:url value="/assets/js/contactUs.js" />"></script>
+
 <style>
 #gmap_canvas img {
 	max-width: none !important;
@@ -67,7 +66,7 @@
 							<li><a href="#">Drop Down Four</a></li>
 							<li><a href="#">Drop Down Five</a></li>
 						</ul></li>
-					<li><a href="another_page.html">Gallery</a></li>
+					<li><a href="gallery.jsp">Gallery</a></li>
 					<li class="selected"><a href="ContactUs.jsp">Contact Us</a></li>
 				</ul>
 				</nav>
@@ -80,17 +79,17 @@
 
 			<div id="sidebar_container">
 				<div class="sidebar">
-					<form onSubmit="Javascript:sendMessage()"
-						class="tsc_form_contact_light">
+					<form class="tsc_form_contact_light">
 						<label for="name">Name <span>(required)</span></label> <input
-							type="text" name="name" class="form-input" required /> <label
-							for="email">Email <span>(required)</span></label> <input
-							type="email" name="email" class="form-input" required /> <label
-							for="subject">Subject <span>(optional)</span></label> <input
-							type="text" name="subject" class="form-input" /> <label
-							for="message">Message <span>(required)</span></label>
-						<textarea name="message" class="form-input" required></textarea>
-						<input class="form-btn" type="submit" value="Send Message" />
+							type="text" name="name" id="name" class="form-input" required />
+						<label for="email">Email <span>(required)</span></label> <input
+							type="email" name="email" id="email" class="form-input" required />
+						<label for="subject">Subject <span>(optional)</span></label> <input
+							type="text" name="subject" id="subject" class="form-input" /> 
+						<label for="message">Message <span>(required)</span></label>
+						<textarea name="message" class="form-input" id="message" required></textarea>
+						<input class="form-btn" type="button" value="Send Message"
+							id="sendMessage" />
 					</form>
 				</div>
 			</div>
@@ -118,7 +117,8 @@
 					Nirmaan Services,<br> 33, III Floor, Jaipur electronic Market,
 					Near Triveni Nagar, Gopalpura Bypass<br> Jaipur, Rajasthan -
 					302015
-				</p><br>
+				</p>
+				<br>
 				<h3>Directions</h3>
 				<div style='overflow: hidden; height: 250px; width: 500px;'>
 					<div id='gmap_canvas' style='height: 250px; width: 500px;'></div>
@@ -131,6 +131,7 @@
 								maps generator</a></small>
 					</div>
 				</div>
+
 			</div>
 
 		</div>
@@ -146,9 +147,8 @@
 	<p>&nbsp;</p>
 	<!-- javascript at the bottom for fast page loading -->
 
-	<%-- <script type="text/javascript"
-		src="<c:url value="/assets/js/lib/jquery.js" />"></script>
-	<script type="text/javascript"
+	 
+	<%--<script type="text/javascript"
 		src="<c:url value="/assets/js/lib/jquery.easing-sooper.js" />"></script>
 	<script type="text/javascript"
 		src="<c:url value="/assets/js/lib/jquery.sooperfish.js" />"></script>
