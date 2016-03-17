@@ -1,0 +1,149 @@
+ul {
+	margin: 2px 0 22px 17px;
+}
+
+ul li {
+	list-style-type: circle;
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+	line-height: 1.5em;
+}
+
+ol {
+	margin: 8px 0 22px 20px;
+}
+
+ol li {
+	margin: 0 0 11px 0;
+}
+
+/* Configuration of menu width */
+html body ul.sf-menu ul, html body ul.sf-menu ul li {
+	width: 200px;
+}
+
+html body ul.sf-menu ul ul {
+	margin: 0 0 0 200px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu, ul.sf-menu * {
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+
+ul.sf-menu {
+	display: block;
+	position: relative;
+}
+
+ul.sf-menu li {
+	display: block;
+	list-style: none;
+	float: left;
+	position: relative;
+}
+
+ul.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+
+ul.sf-menu a {
+	display: block;
+	position: relative;
+}
+
+ul.sf-menu ul {
+	position: absolute;
+	left: 0;
+	width: 150px;
+	top: auto;
+	left: -999999px;
+}
+
+ul.sf-menu ul a {
+	zoom: 1; /* IE6/7 fix */
+}
+
+ul.sf-menu ul li {
+	float: left;
+	/* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+	width: 150px;
+}
+
+ul.sf-menu ul ul {
+	top: 0;
+	margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul, ul.sf-menu li:focus ul, ul.sf-menu li.sf-hover ul,
+	ul.sf-menu ul li:hover ul, ul.sf-menu ul li:focus ul, ul.sf-menu ul li.sf-hover ul,
+	ul.sf-menu ul ul li:hover ul, ul.sf-menu ul ul li:focus ul, ul.sf-menu ul ul li.sf-hover ul,
+	ul.sf-menu ul ul ul li:hover ul, ul.sf-menu ul ul ul li:focus ul, ul.sf-menu ul ul ul li.sf-hover ul
+	{
+	left: auto;
+}
+
+ul.sf-menu li:hover ul ul, ul.sf-menu li:focus ul ul, ul.sf-menu li.sf-hover ul ul,
+	ul.sf-menu ul li:hover ul ul, ul.sf-menu ul li:focus ul ul, ul.sf-menu ul li.sf-hover ul ul,
+	ul.sf-menu ul ul li:hover ul ul, ul.sf-menu ul ul li:focus ul ul, ul.sf-menu ul ul li.sf-hover ul ul,
+	ul.sf-menu ul ul ul li:hover ul ul, ul.sf-menu ul ul ul li:focus ul ul,
+	ul.sf-menu ul ul ul li.sf-hover ul ul {
+	left: -999999px;
+}
+
+/* Theming the menu */
+ul#nav {
+	float: right;
+}
+
+ul#nav ul {
+	background: rgba(30, 45, 59, 0.85);
+	/* margin-top: 5px; */
+	padding-bottom: 15px;
+}
+
+ul#nav li a {
+	padding: 7px 0px 6px 15px;
+	font: 170% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-shadow: 0px 0px #000;
+	text-decoration: none;
+	color: rgba(30, 45, 59, 1);
+	margin-right: 2px;
+}
+
+ul#nav li a:hover, ul#nav li a:focus, ul#nav li.selected a, ul#nav li.selected a:hover,
+	ul#nav li.selected a:focus {
+	/* yellow */
+	color: #EFBE07;
+	text-shadow: none;
+	text-decoration: underline;
+}
+
+ul#nav ul li a {
+	color: #FFF;
+	text-shadow: none;
+}
+
+ul#nav ul li a:hover {
+	color: #EFBE07;
+	margin-right: 2px;
+	text-decoration: none;
+}
+
+/* Image Transitions */
+ul#images {
+	margin: 0 15px 10px 0;
+	padding: 0;
+	position: relative;
+}
+
+ul#images li {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	float: left;
+	width: 155px;
+	height: 300px;
+	list-style: none;
+}

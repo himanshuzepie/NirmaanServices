@@ -12,14 +12,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("in.co.nirmaanservices.controller")
+@ComponentScan({"in.co.nirmaanservices.controller", "in.co.nirmaanservices.service"})
 public class ApplicationContextConfig extends WebMvcConfigurerAdapter{
-	
 	
 	@Bean(name="viewResolver")
 	public ViewResolver viewResolver(){
 		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-		viewResolver.setPrefix("/WEB-INF/views/");
+		viewResolver.setPrefix("/WebContent/");
 		viewResolver.setSuffix(".jsp");
 		return viewResolver;
 	}
@@ -31,7 +30,6 @@ public class ApplicationContextConfig extends WebMvcConfigurerAdapter{
 
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
-		// TODO Auto-generated method stub
 		super.addViewControllers(registry);
 	}
 	

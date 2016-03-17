@@ -1,0 +1,416 @@
+@font-face {
+	font-family: Yanone Kaffeesatz;
+	src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+	src: local("Yanone Kaffeesatz"),
+		url('../fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+@font-face {
+	font-family: News Cycle;
+	src: url('../fonts/NewsCycle-Regular.eot');
+	src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf');
+}
+
+html {
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+
+body {
+	font: normal .80em arial, sans-serif;
+	/* background: #e5e5db; */
+	color: #47433f;
+	/* background-image: url('../images/Background_Image.jpg'); */
+}
+
+.marque {
+	color: red;
+	font-size: medium;
+}
+
+p {
+	padding: 0 0 20px 0;
+	line-height: 1.7em;
+	color: #1E2D3B;
+}
+
+img {
+	border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #362C20;
+	letter-spacing: 0em;
+	padding: 0 0 5px 0;
+}
+
+h1, h2, h3 {
+	font: normal 140% arial, sans-serif;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+	color: #FFF;
+}
+
+h2 {
+	font-size: 160%;
+	padding: 9px 0 5px 0;
+	color: #FFF;
+}
+
+h3 {
+	font-size: 140%;
+	padding: 5px 0 0 0;
+}
+
+h4, h6 {
+	color: #FFF;
+	padding: 0 0 5px 0;
+	font: normal 150% 'Yanone kaffeesatz', arial, sans-serif;
+}
+
+h5, h6 {
+	color: #BBB;
+	font: italic 95% arial, sans-serif;
+	letter-spacing: normal;
+	padding: 0 0 15px 0;
+}
+
+a, a:hover {
+	outline: none;
+	text-decoration: none;
+	color: #09D4FF;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+blockquote {
+	margin: 20px 0;
+	padding: 10px 20px 0 20px;
+	border: 1px solid #E5E5DB;
+	background: #FFF;
+}
+
+
+.left {
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+
+.right {
+	float: right;
+	width: auto;
+	margin-left: 10px;
+}
+
+.center {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+
+#main, nav, #container, #logo, #site_content, footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main {
+	margin: 25px auto;
+	width: 930px;
+	background: transparent;
+	padding-bottom: 30px;
+}
+
+header {
+	background-color: rgba(30, 45, 59, 1);
+	/* background-color: #FFFFFF;*/
+	height: 125px;
+}
+
+#headerDiv {
+	background: rgba(255, 255, 255, 1);
+	width: 930px;
+	margin-top: 0;
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	height: 140px;
+}
+
+#logo {
+	/* width: 300px;
+  height: 125px;
+  background: transparent;
+  color: #FFF;
+  padding: 0;
+  float: left; */
+	width: 400px;
+	height: 150px;
+	/* background: rgb(239, 190, 7); */
+	background: url(../images/logo1.jpg) transparent no-repeat;
+	color: #FFF;
+	padding: 0;
+	float: left;
+	margin-top: 0;
+	z-index: 2;
+	position: absolute;
+	top: 0px;
+	left: auto;
+}
+
+#navDiv {
+	width: 530px;
+	float: right;
+	height: 125px;
+	/* background-color: rgba(30, 45, 59, 1); */
+	background-color: rgb(255, 255, 255);
+}
+
+#logo h1, #logo h2 {
+	font: normal 320% 'News Cycle', arial, sans-serif;
+	border-bottom: 0;
+	text-transform: none;
+	margin: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover {
+	padding: 20px 0 0 30px;;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour {
+	color: #09D4FF;
+}
+
+#logo_text a:hover .logo_colour {
+	color: #FFF;
+}
+
+#logo_text h2 {
+	font-size: 140%;
+	padding: 20px 0 0 100px;
+	color: #FFF;
+}
+
+nav {
+	height: 44px;
+	width: 500px;
+	float: right;
+	margin: 75px auto 0 auto;
+	color: #222;
+}
+
+#site_content {
+	width: 930px;
+	overflow: hidden;
+	margin: 0px auto 0 auto;
+	padding: 15px 0 15px 0;
+}
+
+#sidebar_container {
+	float: right;
+	width: 224px;
+	margin: 25px 0 0 0;
+}
+
+.sidebar {
+	float: right;
+	width: 200px;
+	margin: 0 0 17px 0;
+	padding: 0 15px 5px 13px;
+}
+
+.sidebar h3, .content h1 {
+	padding: 0 15px 20px 0;
+	font: 270% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-shadow: rgb(239, 190, 7) 1px 1px;
+	margin: 0 1px;
+	color: #1E2D3B;
+	text-transform: uppercase;
+}
+
+.content h3 {
+	padding: 0 15px 20px 0;
+	font: 180% 'Yanone Kaffeesatz', arial, sans-serif;
+	text-shadow: rgb(239, 190, 7) 1px 1px;
+	margin: 0 1px;
+	color: #1E2D3B;
+	text-transform: uppercase;
+}
+
+.sidebar h3 {
+	font: 300% 'Yanone Kaffeesatz', arial, sans-serif;
+	padding: 0 15px 5px 0;
+}
+
+.sidebar ul {
+	margin: 0 0 15px 0;
+}
+
+.sidebar li a, .sidebar li a:hover {
+	color: #AAA;
+	text-decoration: none;
+}
+
+.sidebar li a:hover {
+	text-decoration: underline;
+}
+
+.sidebar_item, .content_item {
+	padding: 15px 0;
+}
+
+.content {
+	text-align: left;
+	width: 650px;
+	margin: 0 0 15px 0;
+	float: left;
+	font-size: 120%;
+	padding: 25px 0 0 0;
+}
+
+.content ul {
+	margin: 2px 0 22px 0px;
+}
+
+.content ul li, .sidebar ul li {
+	list-style-type: none;
+	background: url(../images/bullet.png) no-repeat;
+	margin: 0 0 0 0;
+	padding: 0 0 4px 28px;
+	line-height: 1.5em;
+}
+
+footer {
+	width: 930px;
+	font: 170% 'News Cycle', arial, sans-serif;
+	height: 30px;
+	padding: 5px 0 20px 0;
+	text-align: center;
+	border-top: 1px solid #444;
+	background: rgba(30, 45, 59, 0.80);
+}
+
+footer p {
+	line-height: 1.7em;
+	padding: 0 0 10px 0;
+	color: #FFF;
+}
+
+footer a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #efbe07;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+.form_settings {
+	margin: 15px 0 0 0;
+}
+
+.form_settings p {
+	padding: 0 0 4px 0;
+}
+
+.form_settings span {
+	float: left;
+	width: 200px;
+	text-align: left;
+}
+
+.form_settings input, .form_settings textarea {
+	padding: 5px;
+	width: 299px;
+	font: 100% arial;
+	border: none;
+	background: #FFF;
+	color: #47433F;
+	border-radius: 7px 7px 7px 7px;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border: 7px 7px 7px 7px;
+}
+
+.form_settings .submit {
+	font: 140% 'Yanone Kaffeesatz', arial, sans-serif;
+	border: 0;
+	width: 99px;
+	margin: 0 0 0 212px;
+	height: 33px;
+	padding: 2px 0 3px 0;
+	cursor: pointer;
+	background: #1EC9F4;
+	-webkit-border-radius: .5em .5em .5em .5em;
+	-moz-border-radius: .5em .5em .5em .5em;
+	border-radius: .5em .5em .5em .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+	color: #FFF;
+	border: solid 1px #0D8AA9;
+	background: #46C4DD;
+	text-shadow: 1px 1px #178497;
+}
+
+.form_settings textarea, .form_settings select {
+	font: 100% arial;
+	width: 299px;
+}
+
+.form_settings select {
+	width: 310px;
+}
+
+.form_settings .checkbox {
+	margin: 4px 0;
+	padding: 0;
+	width: 14px;
+	border: 0;
+	background: none;
+}
+
+.logoColour {
+	color: rgba(30, 45, 59, 1);
+}
+
+.separator {
+	width: 100%;
+	height: 0;
+	border-top: 1px solid #D9D5CF;
+	border-bottom: 1px solid #FFF;
+	margin: 0 0 20px 0;
+}
+
+table {
+	margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td {
+	background: #70D4E6;
+	color: #FFF;
+	padding: 7px 4px;
+	text-align: left;
+}
+
+table tr td {
+	background: #D3F2F7;
+	color: #47433F;
+	border-top: 1px solid #FFF;
+}
+
+

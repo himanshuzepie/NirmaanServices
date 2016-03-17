@@ -19,6 +19,8 @@ public class SpringWebAppInitializer implements WebApplicationInitializer {
 		ServletRegistration.Dynamic dispatcherServlet = servletContext.addServlet("SpringDispatcher", new DispatcherServlet(applicationContext));
 		dispatcherServlet.setLoadOnStartup(1);
 		dispatcherServlet.addMapping("/");
+		//dispatcherServlet.addMapping("/sendMessage");
+		
 		
 	}
 
