@@ -20,7 +20,7 @@
 				<div id="navDiv">
 					<nav>
 						<ul class="sf-menu" id="nav">
-							<li class="selected"><a href="index.html">Home</a></li>
+							<li class="selected"><a href="index.jsp">Home</a></li>
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Services</a>
 								<ul>

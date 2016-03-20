@@ -8,7 +8,7 @@ $(document).ready(
 				
 				$.post(
 					{
-						url: "sendMessage?name="+name+"&email="+email+"&subject="+subject+"&message="+message,
+						url: "/sendMessage?name="+name+"&email="+email+"&subject="+subject+"&message="+message,
 						dataType: "text",
 						async:false,
 						error: function(){

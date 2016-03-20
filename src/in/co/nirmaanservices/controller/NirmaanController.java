@@ -56,15 +56,14 @@ public class NirmaanController {
 		helper.setSubject(subject);
 		helper.setTo("info@nirmaanservices.co.in");//info@nirmaanservices.co.in
 		helper.setText(message+ " Queried by user email: "+ email,true);
-		
+		helper.isValidateAddresses();
 		jms.send(helper.getMimeMessage());
 		
 		return "success";
 	}
 	
-	@RequestMapping(value = "/hello")
-	public String Hello(){
-		System.out.println("Hello");
-		return "Hello";
+	@RequestMapping(value = "/NirmaanServices")
+	public ModelAndView Hello(){
+		return new ModelAndView("index");
 	}
 }
