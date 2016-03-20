@@ -7,8 +7,7 @@
 
 <head>
 <title>Contact - Nirmaan</title>
-<meta name="description" content="website description" />
-<meta name="keywords" content="website keywords, website keywords" />
+<meta name="Nirmaan" content="construction company, jaipur" />
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 
 
@@ -81,7 +80,7 @@
 
 			<div id="sidebar_container">
 				<div class="sidebar">
-					<form class="tsc_form_contact_light">
+					<div class="tsc_form_contact_light">
 						<label for="name">Name <span>(required)</span></label> <input
 							type="text" name="name" id="name" class="form-input" required />
 						<label for="email">Email <span>(required)</span></label> <input
@@ -92,7 +91,7 @@
 						<textarea name="message" class="form-input" id="message" required></textarea>
 						<input class="form-btn" type="button" value="Send Message"
 							id="sendMessage" />
-					</form>
+					</div>
 				</div>
 			</div>
 			<div class="content">

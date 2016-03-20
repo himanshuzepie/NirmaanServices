@@ -6,7 +6,7 @@ $(document).ready(
 				var subject = $("#subject").val();
 				var message = $("#message").val();
 				
-				$.ajax(
+				$.post(
 					{
 						url: "sendMessage?name="+name+"&email="+email+"&subject="+subject+"&message="+message,
 						dataType: "text",

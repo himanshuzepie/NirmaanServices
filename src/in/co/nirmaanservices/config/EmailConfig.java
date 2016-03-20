@@ -22,10 +22,9 @@ public class EmailConfig {
         JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
 
         javaMailSender.setHost("server98.microhost.com");
-        javaMailSender.setPort(465);
+        javaMailSender.setPort(587);//465
         javaMailSender.setUsername("aman@nirmaanservices.co.in");
         javaMailSender.setPassword("Aman#552");
-        
         javaMailSender.setJavaMailProperties(getMailProperties());
 
         return javaMailSender;
@@ -36,7 +35,7 @@ public class EmailConfig {
         properties.setProperty("mail.transport.protocol", "smtp");
         properties.setProperty("mail.smtp.auth", "true");
         properties.setProperty("mail.smtp.starttls.enable", "false");
-        properties.setProperty("mail.debug", "false");
+        properties.setProperty("mail.debug", "true");
         /*properties.setProperty("mail.smtp.socketFactory.class", "java.net.ssl.SSLSocketFactory");
         properties.setProperty("mail.smtp.socketFactory.fallback", "false");
         properties.setProperty("mail.smtp.socketFactory.port","465");*/

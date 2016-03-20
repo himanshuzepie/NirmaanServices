@@ -1,7 +1,9 @@
 package in.co.nirmaanservices.controller;
 
+import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import org.springframework.http.MediaType;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Controller;
@@ -28,7 +30,7 @@ public class NirmaanController {
 		return new ModelAndView("welcome", "message", message);
 	}
 
-	@RequestMapping(value = "sendMessage", method = RequestMethod.GET)
+	@RequestMapping(value = "/sendMessage", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public String sendMessage(@RequestParam("name") String name, @RequestParam("email") String email,
 			@RequestParam("subject") String subject, @RequestParam("message") String message) throws Exception {
@@ -41,19 +43,28 @@ public class NirmaanController {
 		//emailSender.send("nirmaanservicesjaipur@gmail.com", subject, message);
 		
 		EmailConfig config = new EmailConfig();
-		JavaMailSender jm = config.javaMailService();
+		JavaMailSender jms = config.javaMailService();
 		
-				MimeMessageHelper helper;
-		MimeMessage ms = jm.createMimeMessage();
+		MimeMessageHelper helper;
+		MimeMessage mm = jms.createMimeMessage();
 		
-		helper =  new MimeMessageHelper(ms, true);
+		InternetAddress ia= new InternetAddress();
+		ia.setAddress("aman@nirmaanservices.co.in");
+		mm.setFrom(ia);
+		
+		helper =  new MimeMessageHelper(mm, true);
 		helper.setSubject(subject);
-		helper.setTo("info@nirmaanservices.co.in");
-		helper.setText(message,true);
-		jm.send(ms);
+		helper.setTo("info@nirmaanservices.co.in");//info@nirmaanservices.co.in
+		helper.setText(message+ " Queried by user email: "+ email,true);
+		
+		jms.send(helper.getMimeMessage());
 		
 		return "success";
 	}
 	
-	
+	@RequestMapping(value = "/hello")
+	public String Hello(){
+		System.out.println("Hello");
+		return "Hello";
+	}
 }
