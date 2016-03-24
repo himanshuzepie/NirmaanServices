@@ -38,7 +38,7 @@
 									<li><a href="#">Drop Down Five</a></li>
 								</ul></li>
 							<li><a href="gallery.jsp">Gallery</a></li>
-							<li><a href="ContactUs.jsp">Contact Us</a></li>
+							<li><a href="<c:url value="/contactUs" />">Contact Us</a></li>
 						</ul>
 					</nav>
 				</div>

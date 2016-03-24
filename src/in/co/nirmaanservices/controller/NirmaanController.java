@@ -30,7 +30,7 @@ public class NirmaanController {
 		return new ModelAndView("welcome", "message", message);
 	}
 
-	@RequestMapping(value = "/sendMessage", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	@RequestMapping(value = "sendMessage", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
 	public String sendMessage(@RequestParam("name") String name, @RequestParam("email") String email,
 			@RequestParam("subject") String subject, @RequestParam("message") String message) throws Exception {
@@ -62,8 +62,8 @@ public class NirmaanController {
 		return "success";
 	}
 	
-	@RequestMapping(value = "/NirmaanServices")
+	@RequestMapping(value = "/contactUs")
 	public ModelAndView Hello(){
-		return new ModelAndView("index");
+		return new ModelAndView("ContactUs");
 	}
 }

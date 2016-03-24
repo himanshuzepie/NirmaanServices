@@ -1,0 +1,2 @@
+changes in server.xml
+<Context docBase="ROOT" path="/NirmaanServices" reloadable="true" source="org.eclipse.jst.j2ee.server:ROOT"/></Host>
