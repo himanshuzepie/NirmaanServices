@@ -49,8 +49,8 @@
 			<div id="navDiv">
 				<nav>
 				<ul class="sf-menu" id="nav">
-					<li><a href="index.jsp">Home</a></li>
-					<li><a href="examples.jsp">About Us</a></li>
+					<li><a href="<c:url value="/home" />">Home</a></li>
+					<li><a href="#">About Us</a></li>
 					<!-- <li><a href="page.html">A Page</a></li> -->
 					<li><a href="#">Services</a>
 						<ul>
@@ -67,8 +67,8 @@
 							<li><a href="#">Drop Down Four</a></li>
 							<li><a href="#">Drop Down Five</a></li>
 						</ul></li>
-					<li><a href="gallery.jsp">Gallery</a></li>
-					<li class="selected"><a href="ContactUs.jsp">Contact Us</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li class="selected"><a href="<c:url value="/contactUs" />">Contact Us</a></li>
 				</ul>
 				</nav>
 			</div>
