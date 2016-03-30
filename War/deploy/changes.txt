@@ -1,2 +1,12 @@
 changes in server.xml
-<Context docBase="ROOT" path="/NirmaanServices" reloadable="true" source="org.eclipse.jst.j2ee.server:ROOT"/></Host>
+
+
+<Context path="" debug="5" docBase="/home/nirmaans/jvm/apache-tomcat-8.0.28/domains/nirmaanservices.co.in/NirmaanServices" 
+					privileged="false" reloadable="true"
+					source="org.eclipse.jst.j2ee.server:NirmaanServices" /> -->
+
+
+For local workspace:
+<Context path="" debug="5" docBase="/NirmaanServices" 
+					privileged="false" reloadable="true"
+					source="org.eclipse.jst.j2ee.server:NirmaanServices" />
