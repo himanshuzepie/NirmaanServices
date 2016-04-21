@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- NEVER MODIFY THE SERVER PORTS -->
+<Server port="12125" shutdown="SHUTDOWN">
+  <Listener className="org.apache.catalina.core.AprLifecycleListener" SSLEngine="off" />
+  <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+  <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+  <Listener className="org.apache.catalina.core.ThreadLocalLeakPreventionListener" />
+
+  <GlobalNamingResources>
+    <Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+  </GlobalNamingResources>
+
+  <Service name="Catalina">
+<!-- NEVER MODIFY THE SERVER PORTS -->
+    <Connector port="12124" protocol="HTTP/1.1" 
+               connectionTimeout="20000" 
+               redirectPort="8443" />
+<!-- NEVER MODIFY THE SERVER PORTS -->
+<!--    <Connector port="" protocol="HTTP/1.1" SSLEnabled="true"
+               maxThreads="150" scheme="https" secure="true"
+               clientAuth="false" sslProtocol="TLS" keystorePass="importkey"/> -->
+    <Engine name="Catalina" defaultHost="localhost">
+
+      <Realm className="org.apache.catalina.realm.LockOutRealm">
+        <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+               resourceName="UserDatabase"/>
+      </Realm>
+
+	<Host name="nirmaanservices.co.in" appBase="/home/nirmaans/jvm/apache-tomcat-8.0.28/domains/nirmaanservices.co.in" unpackWARs="true" autoDeploy="true"   xmlValidation="false" xmlNamespaceAware="false">
+    <Context path="/manager" debug="5" docBase="/home/nirmaans/jvm/apache-tomcat-8.0.28/webapps/manager" privileged="true" />
+    
+    <Context path="/" debug="5" docBase="/home/nirmaans/jvm/apache-tomcat-8.0.28/domains/nirmaanservices.co.in/NirmaanServices" 
+					privileged="false" reloadable="true" />
+<!-- source="org.eclipse.jst.j2ee.server:NirmaanServices" -->
+    <Alias>www.nirmaanservices.co.in</Alias>
+    <Alias>nirmaanservices.co.in.server98.microhost.com</Alias>
+    <Alias>www.nirmaanservices.co.in.server98.microhost.com</Alias>
+</Host>
+
+
+
+    </Engine>
+  </Service>
+</Server>

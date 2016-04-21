@@ -5,7 +5,8 @@
 <html>
 
 <head>
-<title>Nirmaan</title>
+<meta name="google-site-verification" content="_cwsp3BwH0LQJ6qewV46cshBRTgFCCzyHmpHb6755dk" />
+<title>Nirmaan Services</title>
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/assets/css/style.css" />" />
 <link rel="stylesheet" type="text/css"
@@ -37,7 +38,7 @@
 									<li><a href="#">Drop Down Four</a></li>
 									<li><a href="#">Drop Down Five</a></li>
 								</ul></li>
-							<li><a href="#">Gallery</a></li>
+							<li><a href="<c:url value="/gallery" />">Gallery</a></li>
 							<!-- <li><a href="ContactUs.jsp">Contact Us</a></li> -->
 							<li><a href="<c:url value="/contactUs" />">Contact Us</a></li>
 						</ul>

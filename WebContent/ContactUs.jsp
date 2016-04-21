@@ -67,7 +67,7 @@
 							<li><a href="#">Drop Down Four</a></li>
 							<li><a href="#">Drop Down Five</a></li>
 						</ul></li>
-					<li><a href="#">Gallery</a></li>
+					<li><a href="<c:url value="/gallery" />">Gallery</a></li>
 					<li class="selected"><a href="<c:url value="/contactUs" />">Contact Us</a></li>
 				</ul>
 				</nav>
@@ -89,8 +89,7 @@
 							type="text" name="subject" id="subject" class="form-input" /> 
 						<label for="message">Message <span>(required)</span></label>
 						<textarea name="message" class="form-input" id="message" required></textarea>
-						<input class="form-btn" type="button" value="Send Message"
-							id="sendMessage" />
+						<input class="form-btn" type="button" value="Send Message" id="sendMessage" />
 					</div>
 				</div>
 			</div>

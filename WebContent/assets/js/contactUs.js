@@ -13,29 +13,19 @@ $(document).ready(
 						async:false,
 						error: function(){
 							alert("error sending message. Please try again!");
+							
 						},
 						success:function(){
 							alert("Message Sent Successfully");
+							$("#name").val("");
+							$("#email").val("");
+							$("#subject").val("");
+							$("#message").val("");
 						}
 					});
 			});
 		}
 );
-function sendMessage(event)
-      {
-        alert("Favorite weird creature: ");
-        $.ajax({
-        type:'GET',
-        url: "/NirmaanServices/NirmaanServices/sendMessage.do",
-        dataType: "json",
-        	success: function (result) {
-                // do something.
-            },
-            error: function (result) {
-                // do something.
-            }
-        });
-      }
 
 function init_map() {
   		var myOptions = {
