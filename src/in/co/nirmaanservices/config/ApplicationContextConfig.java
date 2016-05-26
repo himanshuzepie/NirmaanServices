@@ -31,12 +31,13 @@ public class ApplicationContextConfig extends WebMvcConfigurerAdapter{
 
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/home").setViewName("index");
 		super.addViewControllers(registry);
 	}
 	
-	/*@Override
+	@Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
-    }*/
+    }
 	
 }

@@ -36,9 +36,7 @@ public class EmailConfig {
         properties.setProperty("mail.smtp.auth", "true");
         properties.setProperty("mail.smtp.starttls.enable", "false");
         properties.setProperty("mail.debug", "true");
-        /*properties.setProperty("mail.smtp.socketFactory.class", "java.net.ssl.SSLSocketFactory");
-        properties.setProperty("mail.smtp.socketFactory.fallback", "false");
-        properties.setProperty("mail.smtp.socketFactory.port","465");*/
+        
         return properties;
     }
 }
